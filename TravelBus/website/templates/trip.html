@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{%block title%}Trip{%endblock%}
+
+{%block content%}
+<form method = "GET">
+    <h3 align = "center"> Trips </h3>
+    <div class="form-group">
+        <label for ="departure">Departure</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="departure" 
+            name="departure" 
+            placeholder="Enter your departure city"
+        />
+    </div>
+
+    <div class="form-group">
+        <label for ="destination">Destination</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="destination" 
+            name="destination" 
+            placeholder="Enter your destination city"
+        />
+    </div>
+
+
+    <div class="form-group">
+        <label for ="date">Date</label>
+        <input 
+            type="date" 
+            class="form-control" 
+            id="date" 
+            name="date" 
+            placeholder="Enter date"
+        />
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+{%endblock%}
